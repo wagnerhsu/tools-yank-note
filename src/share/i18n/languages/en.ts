@@ -289,6 +289,14 @@ const data = {
       'moved': '[%s] Moved to [%s]',
       'copied': '[%s] Copied to [%s]',
     },
+    'sort': {
+      'asc': 'Ascending',
+      'desc': 'Descending',
+      'by-name': 'Sort by Name (%s)',
+      'by-mtime': 'Sort by Modified (%s)',
+      'by-birthtime': 'Sort by Created (%s)',
+      'by-serial': 'Sort by Serial (%s)',
+    },
   },
   'tabs': {
     'close-others': 'Close Others',
