@@ -84,6 +84,12 @@ export namespace Components {
       fixed?: boolean;
       temporary?: boolean;
     }
+
+    export interface ActionBtn {
+      icon: string,
+      title: string,
+      onClick: (e: MouseEvent) => void,
+    }
   }
 
   export namespace FileTabs {
@@ -111,6 +117,7 @@ export namespace Components {
     }
 
     export interface Props {
+      filterInputHidden?: boolean;
       top?: string | undefined;
       right?: string | undefined;
       bottom?: string | undefined;
@@ -249,12 +256,14 @@ export type BuildInActions = {
   'tree.reveal-current-node': () => void,
   'editor.toggle-wrap': () => void,
   'editor.refresh-custom-editor': () => void,
+  'editor.trigger-save': () => void,
   'filter.show-quick-open': () => void,
   'filter.choose-document': () => Promise<Doc>,
   'file-tabs.switch-left': () => void,
   'file-tabs.switch-right': () => void,
   'file-tabs.close-current': () => void,
   'file-tabs.search-tabs': () => void,
+  'file-tabs.refresh-action-btns': () => void,
   'xterm.run': (cmd: { code: string, start: string, exit?: string } | string) => void,
   'xterm.init': (opts?: { cwd?: string }) => void,
   'plugin.document-history-stack.back': () => void,
@@ -353,6 +362,7 @@ export type CustomEditorCtx = {
 
 export type CustomEditor = {
   name: string,
+  displayName: string,
   hiddenPreview?: boolean,
   when: (ctx: CustomEditorCtx) => boolean | Promise<boolean>,
   component: any,
@@ -373,6 +383,7 @@ export interface CodeRunner {
 }
 
 export type BuildInIOCTypes = { [key in keyof BuildInHookTypes]: any; } & {
+  TABS_ACTION_BTN_TAPPERS: (btns: Components.Tabs.ActionBtn[]) => void;
   STATUS_BAR_MENU_TAPPERS: any;
   CONTROL_CENTER_SCHEMA_TAPPERS: any;
   EDITOR_SIMPLE_COMPLETION_ITEM_TAPPERS: any;
