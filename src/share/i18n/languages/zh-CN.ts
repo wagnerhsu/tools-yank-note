@@ -306,7 +306,7 @@ const data: BaseLanguage = {
     'close-all': '全部关闭',
     'pin': '固定',
     'unpin': '取消固定',
-    'search-tabs': '搜索标签',
+    'search-tabs': '搜索选项卡',
   },
   'export-panel': {
     'export': '导出',
@@ -416,7 +416,8 @@ const data: BaseLanguage = {
       'insert-date': '插入当前日期',
       'insert-time': '插入当前时间',
       'reveal-line-in-preview': '在预览中聚焦',
-    }
+    },
+    'switch-editor': '切换编辑器',
   },
   'picgo': {
     'setting': {
