@@ -290,6 +290,7 @@ const data = {
       'create-in-cd': 'New File',
       'copy-name': 'Copy Name',
       'copy-path': 'Copy Path',
+      'find-in-folder': 'Find in Folder',
     },
     'toast': {
       'moved': '[%s] Moved to [%s]',
@@ -386,6 +387,9 @@ const data = {
       'doc-history': {
         'number-limit': 'Versions Retained',
       },
+      'search': {
+        'number-limit': 'Search Max Results',
+      },
       'server': {
         'host': 'Listen Host',
         'port': 'Listen Port',
@@ -407,7 +411,6 @@ const data = {
     'input-placeholder': 'Type characters...',
     'empty': 'Empty',
     'files': 'Files',
-    'search': 'Search',
     'marked': 'Marked',
   },
   'editor': {
@@ -588,12 +591,25 @@ const data = {
     'auto-upgrade': 'Auto Upgrade',
     'unknown-origin-tips': 'Using extensions from unknown sources can be risky, still want to enable?',
     'extensions-auto-upgraded': '%s extensions have been upgraded',
+    'fetch-registry-failed': 'Fetch registry failed, please switch to another registry or try again later',
   },
   'get-started': {
     'get-started': 'Get Started',
     'start': 'Start',
     'help': 'Help',
     'recent': 'Recent',
+  },
+  'search-panel': {
+    'search-files': 'Search Files',
+    'placeholder-search': 'Search',
+    'for-history': '(⇅ for history)',
+    'files-to-include': 'Files to include',
+    'files-to-exclude': 'Files to exclude',
+    'match-case': 'Match Case',
+    'match-whole-word': 'Match Whole Word',
+    'use-regex': 'Use Regular Expression',
+    'expand-all': 'Expand All',
+    'collapse-all': 'Collapse All',
   },
 }
 

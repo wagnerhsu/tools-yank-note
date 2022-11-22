@@ -291,6 +291,7 @@ const data: BaseLanguage = {
       'create-in-cd': '当前目录创建新文件',
       'copy-name': '复制名称',
       'copy-path': '复制路径',
+      'find-in-folder': '在文件夹中查找',
     },
     'toast': {
       'moved': '[%s] 已移动到 [%s]',
@@ -379,6 +380,9 @@ const data: BaseLanguage = {
       'doc-history': {
         'number-limit': '版本保留数',
       },
+      'search': {
+        'number-limit': '搜索结果限制',
+      },
       'server': {
         'host': '监听主机',
         'port': '监听端口',
@@ -408,7 +412,6 @@ const data: BaseLanguage = {
     'input-placeholder': '键入字符……',
     'empty': '无结果',
     'files': '快速跳转',
-    'search': '搜索内容',
     'marked': '已标记',
   },
   'editor': {
@@ -589,12 +592,25 @@ const data: BaseLanguage = {
     'auto-upgrade': '自动升级',
     'unknown-origin-tips': '使用未知来源的扩展可能有风险，仍然要启用吗？',
     'extensions-auto-upgraded': '%s 个扩展已升级',
+    'fetch-registry-failed': '获取扩展仓库失败，请切换到其他仓库源或稍后重试',
   },
   'get-started': {
     'get-started': '开始使用',
     'start': '开始',
     'help': '帮助',
     'recent': '最近打开',
+  },
+  'search-panel': {
+    'search-files': '搜索文件',
+    'placeholder-search': '搜索',
+    'for-history': '(⇅ 切换历史)',
+    'files-to-include': '包含文件',
+    'files-to-exclude': '排除文件',
+    'match-case': '区分大小写',
+    'match-whole-word': '匹配整词',
+    'use-regex': '使用正则表达式',
+    'expand-all': '展开所有',
+    'collapse-all': '折叠所有',
   },
 }
 
