@@ -19,7 +19,7 @@
     "lint": "vue-tsc --noEmit --esModuleInterop true && eslint src/ --ext .tsx,.ts,.vue",
     "test": "yarn run jest --coverage --coverage-reporters=text --silent",
     "api-doc": "yarn run typedoc --options .typedoc.json",
-    "prepare": "husky install",
+    "prepare": "echo do nothing",
     "rebuild-pty": "electron-rebuild -f -w node-pty"
   },
   "dependencies": {
